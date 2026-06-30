@@ -1,8 +1,161 @@
-IMAGE CAPTIONING
+# 🖼️ Image Captioning using Deep Learning
+
+## 📌 Overview
+
+This project implements an **Image Captioning** system that automatically generates descriptive captions for images using Deep Learning. The model combines **Convolutional Neural Networks (CNNs)** for image feature extraction with **Recurrent Neural Networks (LSTMs)** for natural language generation.
+
+The notebook is developed in **Google Colab** and can be used to train, evaluate, and generate captions for unseen images.
 
 ---
 
-## 📦 Import Required Libraries
+## 🚀 Features
+
+- Image preprocessing
+- Caption preprocessing and tokenization
+- Image feature extraction using a pretrained CNN
+- Sequence generation using LSTM
+- Model training and validation
+- Caption generation for new images
+- Google Colab compatible
+
+---
+
+## 📂 Project Structure
+
+```
+image_captioning/
+│── image_caption.ipynb          # Main notebook
+│── image_caption.html           # Exported notebook
+│── README.md                    # Project documentation
+│── dataset/                     # Images and captions
+│── models/                      # Saved model files
+│── outputs/                     # Generated captions
+```
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- TensorFlow / Keras
+- NumPy
+- Pandas
+- Matplotlib
+- NLTK
+- Google Colab
+
+---
+
+## 📊 Workflow
+
+1. Load image dataset
+2. Preprocess image captions
+3. Extract image features using a pretrained CNN
+4. Convert captions into sequences
+5. Train the Image Captioning model
+6. Generate captions for unseen images
+7. Evaluate model performance
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/image_captioning.git
+cd image_captioning
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
+pip install tensorflow numpy pandas matplotlib nltk pillow
+```
+
+---
+
+## ▶️ Usage
+
+Run the notebook in Google Colab or Jupyter Notebook.
+
+1. Upload the dataset.
+2. Mount Google Drive (if using Colab).
+3. Execute all notebook cells.
+4. Test the model on new images.
+
+---
+
+## 📈 Model Architecture
+
+- Pretrained CNN (Feature Extractor)
+- Embedding Layer
+- LSTM Decoder
+- Dense Output Layer
+- Softmax Activation
+
+---
+
+## 📷 Sample Output
+
+**Input Image**
+
+*(Add an example image here)*
+
+**Generated Caption**
+
+> "A dog is running through the grass."
+
+---
+
+## 📊 Evaluation
+
+The model can be evaluated using:
+
+- BLEU Score
+- Loss
+- Accuracy
+
+---
+
+## Future Improvements
+
+- Attention Mechanism
+- Transformer-based Image Captioning
+- Beam Search Decoding
+- Larger datasets (MS COCO, Flickr30K)
+- Web application using Flask or Streamlit
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a new branch.
+3. Commit your changes.
+4. Submit a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👤 Author
+
+**Lucky Shah**
+
+GitHub: https://github.com/luckyshah27 📦 Import Required Libraries
 
 This section imports the essential libraries needed for the Image Captioning project. These libraries handle image processing, visualization, numerical computations, and loading the pre-trained CLIP model.
 
